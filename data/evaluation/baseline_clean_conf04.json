@@ -1,0 +1,194 @@
+{
+  "conf_floor": 0.4,
+  "dataset": "data\\datasets\\robustness_v1",
+  "device": "cpu",
+  "imgsz": 416,
+  "iou": 0.5,
+  "test": {
+    "fallen": {
+      "ap50": 0.4286,
+      "fn": 4,
+      "fp": 0,
+      "gt": 7,
+      "precision": 1.0,
+      "recall": 0.4286,
+      "tp": 3
+    },
+    "images": 18,
+    "missed_fallen": [
+      {
+        "best_iou": 0.0,
+        "image": "127.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "128.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "129.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "130.jpg"
+      }
+    ],
+    "missed_normal": [
+      {
+        "best_iou": 0.0,
+        "image": "113.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "114.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "115.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "119.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "122.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "123.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "124.jpg"
+      }
+    ],
+    "normal": {
+      "ap50": 0.3636,
+      "fn": 7,
+      "fp": 0,
+      "gt": 11,
+      "precision": 1.0,
+      "recall": 0.3636,
+      "tp": 4
+    }
+  },
+  "val": {
+    "fallen": {
+      "ap50": 0.0,
+      "fn": 11,
+      "fp": 0,
+      "gt": 11,
+      "precision": null,
+      "recall": 0.0,
+      "tp": 0
+    },
+    "images": 27,
+    "missed_fallen": [
+      {
+        "best_iou": 0.0,
+        "image": "107.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "108.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "109.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "110.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "111.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "112.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "93.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "94.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "96.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "97.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "98.jpg"
+      }
+    ],
+    "missed_normal": [
+      {
+        "best_iou": 0.0,
+        "image": "100.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "101.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "102.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "103.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "104.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "85.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "86.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "87.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "88.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "89.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "90.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "91.jpg"
+      }
+    ],
+    "normal": {
+      "ap50": 0.25,
+      "fn": 12,
+      "fp": 0,
+      "gt": 16,
+      "precision": 1.0,
+      "recall": 0.25,
+      "tp": 4
+    }
+  },
+  "weights": "models\\human-fall-detection\\97261b03632a9715a27481b2cfdac6a78e26d2d9\\best.pt"
+}

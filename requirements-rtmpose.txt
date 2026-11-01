@@ -1,0 +1,7 @@
+# Optional pinned OpenMMLab ONNX pose backend. Download assets explicitly with
+# python tools/download_rtmpose.py before selecting --pose-backend rtmpose.
+-r requirements-ai.txt
+onnxruntime==1.20.1
+rtmlib==0.0.16
+# rtmlib requires the contrib distribution; keep both cv2 providers below v5.
+opencv-contrib-python>=4.10,<5

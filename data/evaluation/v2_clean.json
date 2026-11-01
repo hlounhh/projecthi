@@ -1,0 +1,134 @@
+{
+  "conf_floor": 0.05,
+  "dataset": "data\\datasets\\robustness_v1",
+  "device": "cpu",
+  "imgsz": 416,
+  "iou": 0.5,
+  "test": {
+    "fallen": {
+      "ap50": 0.2857,
+      "fn": 5,
+      "fp": 0,
+      "gt": 7,
+      "precision": 1.0,
+      "recall": 0.2857,
+      "tp": 2
+    },
+    "images": 18,
+    "missed_fallen": [
+      {
+        "best_iou": 0.0,
+        "image": "117.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "125.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "126.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "129.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "130.jpg"
+      }
+    ],
+    "missed_normal": [
+      {
+        "best_iou": 0.004,
+        "image": "115.jpg"
+      },
+      {
+        "best_iou": 0.214,
+        "image": "116.jpg"
+      },
+      {
+        "best_iou": 0.418,
+        "image": "119.jpg"
+      },
+      {
+        "best_iou": 0.375,
+        "image": "120.jpg"
+      },
+      {
+        "best_iou": 0.09,
+        "image": "122.jpg"
+      },
+      {
+        "best_iou": 0.379,
+        "image": "123.jpg"
+      },
+      {
+        "best_iou": 0.426,
+        "image": "124.jpg"
+      }
+    ],
+    "normal": {
+      "ap50": 0.1352,
+      "fn": 7,
+      "fp": 27,
+      "gt": 11,
+      "precision": 0.129,
+      "recall": 0.3636,
+      "tp": 4
+    }
+  },
+  "val": {
+    "fallen": {
+      "ap50": 0.3896,
+      "fn": 5,
+      "fp": 28,
+      "gt": 11,
+      "precision": 0.1765,
+      "recall": 0.5455,
+      "tp": 6
+    },
+    "images": 27,
+    "missed_fallen": [
+      {
+        "best_iou": 0.334,
+        "image": "93.jpg"
+      },
+      {
+        "best_iou": 0.48,
+        "image": "94.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "96.jpg"
+      },
+      {
+        "best_iou": 0.286,
+        "image": "97.jpg"
+      },
+      {
+        "best_iou": 0.027,
+        "image": "98.jpg"
+      }
+    ],
+    "missed_normal": [
+      {
+        "best_iou": 0.185,
+        "image": "86.jpg"
+      },
+      {
+        "best_iou": 0.451,
+        "image": "89.jpg"
+      }
+    ],
+    "normal": {
+      "ap50": 0.7903,
+      "fn": 2,
+      "fp": 19,
+      "gt": 16,
+      "precision": 0.4242,
+      "recall": 0.875,
+      "tp": 14
+    }
+  },
+  "weights": "models\\fall-finetuned-v2\\best.pt"
+}

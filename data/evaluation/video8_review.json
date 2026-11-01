@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "record_type": "visual_coverage_review",
+  "status": "provisional_count_aligned_partial_positive_candidates_unscored",
+  "source": {
+    "video": "video8.mp4",
+    "sha256": "d1ad5b82a6f72843e6c0baa24d9bbcc36baf9bd9eddedc04ca110ef5449d4f33",
+    "size_bytes": 148256977,
+    "fps": 30.0,
+    "frame_count": 3821,
+    "duration_s": 127.36666666666666,
+    "width": 1280,
+    "height": 720,
+    "probe_backend": "OpenCV CAP_FFMPEG",
+    "source_hash_checked_against_local_file": true
+  },
+  "reviewer": {
+    "agent_id": "utulspt846y18fmgybkyqale",
+    "review_method": "Visual inspection of all seven timestamped contact sheets listed below; no continuous playback or frame-complete review.",
+    "sampling_agent_id": "vz3mqlt33cf5lkfr39fmn99p",
+    "skill": "C:/Users/DELL/.agents/skills/watch/SKILL.md",
+    "tool_fallback": "dapi unavailable on this Windows environment; existing OpenCV frame samples used with explicit coverage limits.",
+    "audio_inspected": false,
+    "review_independent_of_detector_predictions": true,
+    "candidate_locations_from": "Detector-independent coarse visual timeline, then dense visual samples.",
+    "held_out": false,
+    "partition_note": "Development review. Frames from video8 were also used for INT8 calibration, so this source cannot serve as an independent held-out test."
+  },
+  "user_count_reference": {
+    "path": "data/logs/eval_real_7_10_20261026_reference_counts.json",
+    "file_sha256": "b1f7b9f40f433df44c378a8e9e8efd16c878905cb4c767d6ca3aa61e20ae4988",
+    "reference_type": "user_supplied_event_counts_only",
+    "reference_fall_count": 2,
+    "reference_duration_s": 127.367,
+    "reference_table_duration": "2:07",
+    "mapping_method": "Matched screenshot rows to local file durations and approximate sizes, not filename order.",
+    "reference_has_source_hash": false,
+    "reference_has_event_timestamps": false,
+    "relationship_to_visual_review": "The two visually identified cushioned descents are plausible assignments to the user's two reference falls. They are recorded below as partial positive hypotheses aligned with that count. Count equality alone does not establish that these are the exact two events intended by the user.",
+    "event_assignment_status": "provisional_not_adjudicated",
+    "positive_hypothesis_count": 2
+  },
+  "scoring": {
+    "eligible": false,
+    "complete_clip_annotation": false,
+    "adjudicated_fall_count": null,
+    "unreviewed_intervals_are_negative": false,
+    "may_import_into_complete_clip_evaluator": false,
+    "reason": "The user's count supports two positive event hypotheses, but does not locate them. Their assignment to the two visual descents remains provisional. Overview samples omit intervening motion, and the existing evaluator treats every event outside complete fall intervals as false; this review does not justify that assumption.",
+    "required_before_scoring": [
+      "Confirm whether the two cushioned descents are the two falls counted by the user; the count is useful evidence but does not provide event identities or timestamps.",
+      "Review continuous full-frame footage throughout the clip, including lowered postures around 17, 47, and 85-93 seconds and the gaps between overview samples.",
+      "Adjudicate every candidate and record complete positive intervals or a supported complete-clip negative judgment."
+    ]
+  },
+  "coverage": {
+    "timeline_overview_spans_complete_duration": true,
+    "continuous_full_clip_review": false,
+    "all_source_frames_reviewed": false,
+    "sampling_script": ".context/visual_sheets.py",
+    "sampling_rule": "frame_index = round(timestamp_s * source_fps); timestamps printed as frame_index / source_fps.",
+    "image_transform": {
+      "crop_xyxy_source_pixels": [128, 144, 1280, 720],
+      "tile_size_pixels": [384, 216],
+      "note": "The sampler removes the top 20% and left 10%, then resizes to 384x216. Cropped or occluded areas are not evidence of absence. These images support qualitative action review, not quantitative geometry."
+    },
+    "sample_sets": [
+      {
+        "role": "coarse_overview",
+        "start_s": 0.0,
+        "last_sample_s": 127.0,
+        "step_s": 1.0,
+        "sample_count": 128,
+        "source_frame_indices": {"first": 0, "last": 3810, "step": 30},
+        "command": "python .context/visual_sheets.py video8.mp4 --step 1 --tag video8_visual",
+        "viewed_contact_sheets": [
+          ".context/video8_visual_00.jpg",
+          ".context/video8_visual_01.jpg",
+          ".context/video8_visual_02.jpg",
+          ".context/video8_visual_03.jpg"
+        ]
+      },
+      {
+        "role": "candidate_descent_detail",
+        "start_s": 59.0,
+        "last_sample_s": 79.8,
+        "step_s": 0.2,
+        "sample_count": 105,
+        "source_frame_indices": {"first": 1770, "last": 2394, "step": 6},
+        "command": "python .context/visual_sheets.py video8.mp4 --start 59 --end 80 --step 0.2 --tag video8_descents",
+        "viewed_contact_sheets": [
+          ".context/video8_descents_00.jpg",
+          ".context/video8_descents_01.jpg",
+          ".context/video8_descents_02.jpg"
+        ]
+      }
+    ],
+    "unique_sampled_source_frames": 212,
+    "source_frames_not_sampled": 3609,
+    "tail_after_last_sample_not_reviewed_s": [127.0, 127.36666666666666],
+    "remaining_gap_description": "Between consecutive overview frames, motion is unobserved except for the 59.0-79.8 second interval, which has 0.2 second sampling gaps. No gap is labeled negative."
+  },
+  "candidate_events": [
+    {
+      "candidate_id": "video8_descent_60s",
+      "status": "provisional_user_count_aligned_positive_candidate",
+      "fall_label": null,
+      "provisional_label": "fall",
+      "label_basis": "Independent visual descent plus the user's count of two falls in the duration-matched source; exact event assignment remains unconfirmed.",
+      "label_adjudicated": false,
+      "scoring_eligible": false,
+      "context_window_s": [59.0, 67.4],
+      "possible_descent_onset_bracket_s": [60.0, 60.4],
+      "onset_midpoint_estimate_s": 60.2,
+      "temporal_bracket_half_width_s": 0.2,
+      "resting_low_posture_observed_s": [60.8, 63.6],
+      "standing_recovery_bracket_s": [66.6, 67.4],
+      "visible_evidence": "The person handles a beanbag while standing, bends and lowers forward, then rests the torso across the beanbags with the legs extending toward the floor. The person sits up and subsequently rises.",
+      "interpretation_limit": "The support surface is cushioned. Visual samples do not establish loss of balance or intent. The user's count makes a positive assignment plausible, but does not confirm this event's identity. The midpoint is a provisional navigation cue, not an adjudicated fall onset.",
+      "evidence_sheets": [".context/video8_descents_00.jpg", ".context/video8_descents_01.jpg"]
+    },
+    {
+      "candidate_id": "video8_descent_73s",
+      "status": "provisional_user_count_aligned_positive_candidate",
+      "fall_label": null,
+      "provisional_label": "fall",
+      "label_basis": "Independent visual descent plus the user's count of two falls in the duration-matched source; exact event assignment remains unconfirmed.",
+      "label_adjudicated": false,
+      "scoring_eligible": false,
+      "context_window_s": [72.2, 79.4],
+      "possible_descent_onset_bracket_s": [73.2, 73.8],
+      "onset_midpoint_estimate_s": 73.5,
+      "temporal_bracket_half_width_s": 0.3,
+      "resting_low_posture_observed_s": [74.4, 76.2],
+      "standing_recovery_bracket_s": [78.6, 79.2],
+      "visible_evidence": "From standing beside the cushions, the person lowers backward and sideways into a reclined posture supported by the beanbags, then sits up and rises.",
+      "interpretation_limit": "A quick descent is visible. The user's two-event count supports a positive hypothesis, while its assignment to this exact descent remains unconfirmed. The onset bracket describes motion timing; it does not establish an adjudicated fall label.",
+      "evidence_sheets": [".context/video8_descents_01.jpg", ".context/video8_descents_02.jpg"]
+    }
+  ],
+  "other_observed_context": [
+    {"sample_window_s": [12.0, 27.0], "description": "Adjusting cushions, seated posture on a beanbag, then rising; overview only."},
+    {"sample_window_s": [46.0, 56.0], "description": "Lowering near the left chair/table and remaining seated low, partly cropped or obscured; overview only and not adjudicated."},
+    {"sample_window_s": [84.0, 95.0], "description": "Sitting on a chair behind the table, reclining with legs extended, then rising; overview only and not adjudicated."}
+  ],
+  "conclusion": "Additional source footage has a reproducible visual coverage record and two partial positive event hypotheses aligned with the user's count of two falls. The suggested onsets are 60.2 and 73.5 seconds, with explicit visual brackets and unresolved event assignment. No complete-clip or scored positive/negative annotation is asserted."
+}

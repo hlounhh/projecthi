@@ -1,0 +1,102 @@
+{
+  "conf_floor": 0.05,
+  "dataset": "data\\datasets\\robustness_v1",
+  "device": "cpu",
+  "imgsz": 416,
+  "iou": 0.5,
+  "test": {
+    "fallen": {
+      "ap50": 0.2857,
+      "fn": 5,
+      "fp": 36,
+      "gt": 7,
+      "precision": 0.0526,
+      "recall": 0.2857,
+      "tp": 2
+    },
+    "images": 18,
+    "missed_fallen": [
+      {
+        "best_iou": 0.371,
+        "image": "117.jpg"
+      },
+      {
+        "best_iou": 0.366,
+        "image": "125.jpg"
+      },
+      {
+        "best_iou": 0.467,
+        "image": "126.jpg"
+      },
+      {
+        "best_iou": 0.312,
+        "image": "129.jpg"
+      },
+      {
+        "best_iou": 0.31,
+        "image": "130.jpg"
+      }
+    ],
+    "missed_normal": [
+      {
+        "best_iou": 0.131,
+        "image": "115.jpg"
+      },
+      {
+        "best_iou": 0.469,
+        "image": "124.jpg"
+      }
+    ],
+    "normal": {
+      "ap50": 0.4977,
+      "fn": 2,
+      "fp": 33,
+      "gt": 11,
+      "precision": 0.2143,
+      "recall": 0.8182,
+      "tp": 9
+    }
+  },
+  "val": {
+    "fallen": {
+      "ap50": 0.3879,
+      "fn": 3,
+      "fp": 172,
+      "gt": 11,
+      "precision": 0.0444,
+      "recall": 0.7273,
+      "tp": 8
+    },
+    "images": 27,
+    "missed_fallen": [
+      {
+        "best_iou": 0.246,
+        "image": "93.jpg"
+      },
+      {
+        "best_iou": 0.467,
+        "image": "96.jpg"
+      },
+      {
+        "best_iou": 0.263,
+        "image": "98.jpg"
+      }
+    ],
+    "missed_normal": [
+      {
+        "best_iou": 0.445,
+        "image": "86.jpg"
+      }
+    ],
+    "normal": {
+      "ap50": 0.7847,
+      "fn": 1,
+      "fp": 70,
+      "gt": 16,
+      "precision": 0.1765,
+      "recall": 0.9375,
+      "tp": 15
+    }
+  },
+  "weights": "models\\fall-finetuned-v1\\best.pt"
+}

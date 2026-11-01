@@ -1,0 +1,21 @@
+{
+  "min_detection_confidence": 0.4,
+  "min_keypoint_confidence": 0.5,
+  "fallen_label_threshold": 0.4,
+  "fallen_label_reset_threshold": 0.2,
+  "max_frame_gap": 0.3,
+  "max_track_gap": 1.0,
+  "baseline_seconds": 0.4,
+  "motion_window": 0.8,
+  "min_drop": 0.28,
+  "min_descent_speed": 0.65,
+  "min_angle_change": 45.0,
+  "min_angular_speed": 85.0,
+  "verify_seconds": 0.6,
+  "suspicion_timeout": 2.5,
+  "cooldown_seconds": 5.0,
+  "keypoint_smoothing": false,
+  "smoothing_min_cutoff": 1.5,
+  "smoothing_beta": 5.0,
+  "smoothing_derivative_cutoff": 1.0
+}

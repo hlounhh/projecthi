@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Báo Cáo Dự Án Phát Hiện Ngã · IMOU RTSP</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="fall-report">
+  <div class="fr-meta fr-in">
+    <span>Dự án phát hiện ngã · IMOU</span>
+    <span>Hệ thống giám sát cục bộ</span>
+  </div>
+  <hr>
+
+  <header class="fr-hero">
+    <p class="fr-kicker fr-in">Cảnh báo an toàn trong nhà</p>
+    <h1 class="fr-in">Phát hiện ngã bằng <em>camera thường.</em></h1>
+    <p class="fr-sub fr-in">Không cần cảm biến đeo người. Camera RTSP hiện có, mô hình nhận tư thế sẵn có, chạy trọn bộ trên CPU — và báo rõ khi có người ngã.</p>
+    <p class="fr-sign fr-in">
+      <span>Python</span><span>Ensemble PyTorch</span><span>CPU-only</span>
+    </p>
+  </header>
+
+  <section>
+    <div class="fr-section-header">
+      <h2>Tổng quan ý tưởng</h2>
+      <p class="fr-lead">Tận dụng nguồn lực camera an ninh sẵn có trong nhà để xây dựng mạng lưới bảo vệ người cao tuổi tự động, riêng tư và tiết kiệm tối đa.</p>
+    </div>
+    <div class="fr-notes">
+      <div class="fr-note">
+        <i>Ý tưởng</i>
+        <b>Thị giác máy tính thụ động</b>
+        <p>Biến camera wifi gia đình (IMOU) thành mắt thần nhận diện nguy cơ té ngã theo thời gian thực mà người già không cần đeo thiết bị vướng víu.</p>
+      </div>
+      <div class="fr-note">
+        <i>Mục đích</i>
+        <b>Cấp cứu trong thời gian vàng</b>
+        <p>Báo động tức thì cho người thân khi xảy ra tai nạn té ngã, tránh tình trạng nằm bất động hàng giờ trên sàn nhà gây nguy hiểm tính mạng.</p>
+      </div>
+      <div class="fr-note">
+        <i>Giá trị cốt lõi</i>
+        <b>Chạy Offline &amp; Chi phí 0đ</b>
+        <p>Xử lý cục bộ 100% trên CPU máy tính gia đình — bảo vệ tuyệt đối quyền riêng tư hình ảnh phòng ngủ/phòng khách và không tốn tiền mua phần cứng mới.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="fr-section-header">
+      <h2>Kiến trúc hệ thống</h2>
+      <p class="fr-lead">Ai cũng đọc được sơ đồ này: hình đi vào, câu trả lời đi ra, không vòng lặp phức tạp.</p>
+    </div>
+    <div class="fr-flow-wrap">
+      <div class="fr-scroll-hint">
+        <span>&larr; Vuốt ngang xem các bước &rarr;</span>
+        <span>6 bước</span>
+      </div>
+      <div class="fr-flow" role="img" aria-label="Sơ đồ luồng: camera, khung hình, AI, gộp người, bộ máy ngã, cảnh báo">
+        <div class="fr-node"><i>01</i><b>Camera</b><s>Hình đến qua RTSP</s></div>
+        <div class="fr-node"><i>02</i><b>Khung mới nhất</b><s>Chỉ giữ khung mới</s></div>
+        <div class="fr-node"><i>03</i><b>AI nhìn người</b><s>Khung xương + tư thế</s></div>
+        <div class="fr-node"><i>04</i><b>Gộp người</b><s>Một người, một kết quả</s></div>
+        <div class="fr-node"><i>05</i><b>Bộ đo ngã</b><s>Đo rơi, nghiêng, chuyển động</s></div>
+        <div class="fr-node"><i>06</i><b>Cảnh báo</b><s>Viền đỏ + ghi nhật ký</s></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="fr-section-header">
+      <h2>Bốn trạng thái phân loại</h2>
+      <p class="fr-lead">Mỗi người luôn ở một trong bốn trạng thái. Chỉ một trạng thái duy nhất kêu báo.</p>
+    </div>
+    <div class="fr-states">
+      <div class="fr-state"><span class="fr-dot" aria-hidden="true"></span><b>Bình thường</b><p>Đang đi, đứng hay ngồi như ngày thường.</p></div>
+      <div class="fr-state"><span class="fr-dot" aria-hidden="true"></span><b>Nghi ngờ</b><p>Tư thế bất thường, vẫn chờ xác nhận thêm.</p></div>
+      <div class="fr-state is-key"><span class="fr-dot" aria-hidden="true"></span><b>Đã ngã</b><p>Đủ bằng chứng rơi thật — kêu báo ngay.</p></div>
+      <div class="fr-state is-lost"><span class="fr-dot" aria-hidden="true"></span><b>Mất dấu</b><p>Bị che hoặc mất hình, im lặng chứ không đoán mò.</p></div>
+    </div>
+  </section>
+
+  <!-- 04. Video Kết quả kiểm thử thực tế -->
+  <section id="section-demo-videos">
+    <div class="fr-section-header">
+      <h2>Kết quả kiểm thử thực tế</h2>
+      <p class="fr-lead">Video kết quả chạy trực tiếp từ models</p>
+    </div>
+    <div class="fr-video-grid">
+      <div class="fr-video-card">
+        <video class="fr-auto-video" muted loop playsinline preload="metadata" src="videos/result_video.mp4"></video>
+      </div>
+
+      <div class="fr-video-card">
+        <video class="fr-auto-video" muted loop playsinline preload="metadata" src="videos/result_video2.mp4"></video>
+      </div>
+
+      <div class="fr-video-card">
+        <video class="fr-auto-video" muted loop playsinline preload="metadata" src="videos/result_video3.mp4"></video>
+      </div>
+
+      <div class="fr-video-card">
+        <video class="fr-auto-video" muted loop playsinline preload="metadata" src="videos/result_video4.mp4"></video>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="fr-section-header">
+      <h2>Đối tượng hướng đến</h2>
+      <p class="fr-lead">Hệ thống phục vụ những người cần sự an tâm và phản ứng tức thì khi có sự cố mà không phụ thuộc thiết bị đeo.</p>
+    </div>
+    <div class="fr-notes">
+      <div class="fr-note">
+        <i>Gia đình</i>
+        <b>Người cao tuổi sống một mình</b>
+        <p>Cần được cứu hộ kịp thời khi trượt ngã, không bị cảm giác vướng víu hay quên sạc pin vòng đeo tay.</p>
+      </div>
+      <div class="fr-note">
+        <i>Người chăm sóc</i>
+        <b>Con cái &amp; người thân đi làm xa</b>
+        <p>Cần thông báo tự động ngay lập tức khi người nhà gặp nạn, thay vì phải ngồi trực nhìn màn hình 24/7.</p>
+      </div>
+      <div class="fr-note">
+        <i>Tổ chức</i>
+        <b>Viện dưỡng lão &amp; trạm y tế</b>
+        <p>Giảm tải cho đội ngũ điều dưỡng ca đêm, phủ kín các góc sinh hoạt chung mà chi phí lắp đặt cực thấp.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="fr-section-header">
+      <h2>Điểm cần lưu ý</h2>
+      <p class="fr-lead">Số tốt phía trên lấy từ 6 clip thử — quá ít để tuyên bố hoàn hảo.</p>
+    </div>
+    <div class="fr-notes">
+      <div class="fr-note"><i>Ghi chú 01</i><p>Ngưỡng cảnh báo mới là mặc định, chưa hiệu chỉnh theo môi trường nhà bạn.</p></div>
+      <div class="fr-note"><i>Ghi chú 02</i><p>Nguồn video nhỏ 6 clip. Chạy thêm video thật sẽ đổi thêm tức thì.</p></div>
+      <div class="fr-note"><i>Ghi chú 03</i><p>Cảnh báo từ máy vẫn chỉ là cảnh báo. Người cần đến kiểm tra, không phải thuật toán.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="fr-section-header">
+      <h2>Hiệu quả dự kiến</h2>
+      <p class="fr-lead">Đánh giá thành công dựa trên tốc độ hỗ trợ nạn nhân và khả năng triển khai thực tế trên diện rộng.</p>
+    </div>
+    <div class="fr-notes">
+      <div class="fr-note">
+        <i>Cứu hộ</i>
+        <b>Rút ngắn "thời gian vàng"</b>
+        <p>Phát hiện sau chưa đầy 1 giây rơi; giảm thời gian nạn nhân nằm bất động trên sàn từ hàng giờ xuống vài phút.</p>
+      </div>
+      <div class="fr-note">
+        <i>Kinh tế &amp; Riêng tư</i>
+        <b>Chi phí 0đ phần cứng mới</b>
+        <p>Tận dụng camera wifi có sẵn, chạy hoàn toàn nội bộ trên máy tính gia đình, không truyền video riêng tư lên đám mây.</p>
+      </div>
+      <div class="fr-note">
+        <i>Đo lường</i>
+        <b>Tiêu chí thành công</b>
+        <p>Đạt tỷ lệ nhận diện ngã thật (Recall) &ge; 95%, tỷ lệ báo giả (False Positive) &le; 1 lần/tuần trên luồng thực tế.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="fr-section-header">
+      <h2>Kết luận &amp; kiến nghị</h2>
+      <p class="fr-lead">Ý tưởng chứng minh tính khả thi cao: phần mềm thông minh có thể biến camera giá rẻ thành người giám sát thầm lặng.</p>
+    </div>
+    <div class="fr-notes">
+      <div class="fr-note">
+        <i>Khẳng định</i>
+        <b>Giá trị nhân văn &amp; thực tiễn</b>
+        <p>Giải pháp bảo vệ tính mạng người già với chi phí bình dân, phù hợp với hầu hết các gia đình Việt Nam hiện nay.</p>
+      </div>
+      <div class="fr-note">
+        <i>Đề xuất</i>
+        <b>Hướng phát triển</b>
+        <p>Tích hợp còi hú trực tiếp tại camera IMOU, kết nối API Telegram/Zalo gửi clip 5 giây khi có ngã đến điện thoại người thân.</p>
+      </div>
+      <div class="fr-note">
+        <i>Kiến nghị</i>
+        <b>Mong muốn hỗ trợ</b>
+        <p>Cần thử nghiệm thêm trên tập dữ liệu video ngã đa dạng hơn (thiếu sáng, góc chéo) và hỗ trợ tích hợp bo mạch nhúng (Mini PC/Pi).</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "video.mp4": {"falls": [{"onset": 6.3, "end": 16.295233333333332}], "status": "provisional_visual", "onset_uncertainty_s": 0.35, "description": "Forward descent, curled landing, then prone on floor."},
+  "video2.mp4": {"falls": [{"onset": 6.3, "end": 15.26}], "status": "provisional_visual", "onset_uncertainty_s": 0.35, "description": "Backward descent to floor, supine with bent/lifted legs."},
+  "video3.mp4": {"falls": [{"onset": 7.0, "end": 15.195555555555556}], "status": "provisional_visual", "onset_uncertainty_s": 0.35, "description": "Initially seated, stands, then descends forward to floor and rolls sideways."},
+  "video4.mp4": {"falls": [{"onset": 6.9, "end": 15.295522222222223}], "status": "provisional_visual", "onset_uncertainty_s": 0.35, "description": "Lateral descent and side-lying floor landing."},
+  "video5.mp4": {"falls": [], "status": "provisional_visual", "description": "Repeated bends/stumbles, recovers, then sits on sofa; no floor fall."},
+  "video6.mp4": {"falls": [], "status": "provisional_visual", "description": "Bends/stumbles and recovers upright; no floor fall."}
+}

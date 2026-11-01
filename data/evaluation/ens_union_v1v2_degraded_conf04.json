@@ -1,0 +1,366 @@
+{
+  "conf_floor": 0.4,
+  "dataset": "data\\datasets\\robustness_v1_eval_degraded",
+  "device": "cpu",
+  "imgsz": 416,
+  "iou": 0.5,
+  "merge": "union",
+  "test": {
+    "fallen": {
+      "ap50": 0.0786,
+      "fn": 24,
+      "fp": 18,
+      "gt": 28,
+      "precision": 0.1818,
+      "recall": 0.1429,
+      "tp": 4
+    },
+    "images": 72,
+    "missed_fallen": [
+      {
+        "best_iou": 0.0,
+        "image": "117_blur.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "117_dim.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "117_grain.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "117_occluded.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "125_blur.jpg"
+      },
+      {
+        "best_iou": 0.452,
+        "image": "125_dim.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "125_grain.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "125_occluded.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "126_blur.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "126_dim.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "126_grain.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "126_occluded.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "127_dim.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "127_grain.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "127_occluded.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "128_occluded.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "129_blur.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "129_dim.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "129_grain.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "129_occluded.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "130_blur.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "130_dim.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "130_grain.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "130_occluded.jpg"
+      }
+    ],
+    "missed_normal": [
+      {
+        "best_iou": 0.366,
+        "image": "114_blur.jpg"
+      },
+      {
+        "best_iou": 0.441,
+        "image": "114_grain.jpg"
+      },
+      {
+        "best_iou": 0.307,
+        "image": "114_occluded.jpg"
+      },
+      {
+        "best_iou": 0.002,
+        "image": "115_blur.jpg"
+      },
+      {
+        "best_iou": 0.04,
+        "image": "115_dim.jpg"
+      },
+      {
+        "best_iou": 0.108,
+        "image": "115_grain.jpg"
+      },
+      {
+        "best_iou": 0.006,
+        "image": "115_occluded.jpg"
+      },
+      {
+        "best_iou": 0.286,
+        "image": "119_blur.jpg"
+      },
+      {
+        "best_iou": 0.395,
+        "image": "119_grain.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "120_blur.jpg"
+      },
+      {
+        "best_iou": 0.326,
+        "image": "120_grain.jpg"
+      },
+      {
+        "best_iou": 0.229,
+        "image": "120_occluded.jpg"
+      },
+      {
+        "best_iou": 0.366,
+        "image": "121_blur.jpg"
+      },
+      {
+        "best_iou": 0.171,
+        "image": "122_blur.jpg"
+      },
+      {
+        "best_iou": 0.182,
+        "image": "122_grain.jpg"
+      },
+      {
+        "best_iou": 0.192,
+        "image": "122_occluded.jpg"
+      },
+      {
+        "best_iou": 0.416,
+        "image": "124_blur.jpg"
+      },
+      {
+        "best_iou": 0.424,
+        "image": "124_dim.jpg"
+      },
+      {
+        "best_iou": 0.488,
+        "image": "124_grain.jpg"
+      },
+      {
+        "best_iou": 0.419,
+        "image": "124_occluded.jpg"
+      }
+    ],
+    "normal": {
+      "ap50": 0.2369,
+      "fn": 20,
+      "fp": 93,
+      "gt": 44,
+      "precision": 0.2051,
+      "recall": 0.5455,
+      "tp": 24
+    }
+  },
+  "val": {
+    "fallen": {
+      "ap50": 0.2786,
+      "fn": 22,
+      "fp": 62,
+      "gt": 44,
+      "precision": 0.2619,
+      "recall": 0.5,
+      "tp": 22
+    },
+    "images": 108,
+    "missed_fallen": [
+      {
+        "best_iou": 0.0,
+        "image": "107_blur.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "108_blur.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "111_grain.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "112_blur.jpg"
+      },
+      {
+        "best_iou": 0.292,
+        "image": "93_blur.jpg"
+      },
+      {
+        "best_iou": 0.348,
+        "image": "93_dim.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "93_grain.jpg"
+      },
+      {
+        "best_iou": 0.354,
+        "image": "93_occluded.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "94_blur.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "94_grain.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "96_blur.jpg"
+      },
+      {
+        "best_iou": 0.171,
+        "image": "96_dim.jpg"
+      },
+      {
+        "best_iou": 0.07,
+        "image": "96_grain.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "96_occluded.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "97_blur.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "97_dim.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "97_grain.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "97_occluded.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "98_blur.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "98_dim.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "98_grain.jpg"
+      },
+      {
+        "best_iou": 0.036,
+        "image": "98_occluded.jpg"
+      }
+    ],
+    "missed_normal": [
+      {
+        "best_iou": 0.032,
+        "image": "100_blur.jpg"
+      },
+      {
+        "best_iou": 0.195,
+        "image": "100_grain.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "100_occluded.jpg"
+      },
+      {
+        "best_iou": 0.291,
+        "image": "86_blur.jpg"
+      },
+      {
+        "best_iou": 0.178,
+        "image": "86_dim.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "86_grain.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "87_blur.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "89_blur.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "90_blur.jpg"
+      },
+      {
+        "best_iou": 0.0,
+        "image": "91_grain.jpg"
+      }
+    ],
+    "normal": {
+      "ap50": 0.8186,
+      "fn": 10,
+      "fp": 42,
+      "gt": 64,
+      "precision": 0.5625,
+      "recall": 0.8438,
+      "tp": 54
+    }
+  },
+  "weights": [
+    "models\\fall-finetuned-v1\\best.pt",
+    "models\\fall-finetuned-v2\\best.pt"
+  ]
+}

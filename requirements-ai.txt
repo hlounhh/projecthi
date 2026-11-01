@@ -1,0 +1,5 @@
+# Install CPU torch/torchvision first from https://download.pytorch.org/whl/cpu.
+-r requirements.txt
+torch>=2.6,<3
+torchvision>=0.21,<1
+ultralytics>=8.3,<9

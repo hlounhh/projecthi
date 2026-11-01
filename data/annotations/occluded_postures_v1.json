@@ -1,0 +1,2432 @@
+{
+  "schema_version": 1,
+  "classes": [
+    "fallen",
+    "normal"
+  ],
+  "annotation_type": "image_posture_not_temporal_fall_events",
+  "split_policy": "living_room+sofa_room:train; office(video7+8):validation; bedroom(video9):finetuning_holdout",
+  "limitations": [
+    "Small development dataset; no claim of independent real-world accuracy.",
+    "Unobservable posture samples excluded; reclining is a down posture, not proof of a fall event.",
+    "Boxes reviewed visually after model proposals; author event counts not used as frame labels."
+  ],
+  "excluded_ids": [
+    7,
+    21,
+    28,
+    35,
+    62,
+    63,
+    64,
+    65,
+    95
+  ],
+  "records": [
+    {
+      "id": 0,
+      "video": "video.mp4",
+      "frame_index": 30,
+      "timestamp": 0.9997075664621676,
+      "source_sha256": "71907489164047eab3c507c2bb319d1de47f7ee8e6a0ef01bf625ea59018bd0d",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": null,
+      "xyxy": null,
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 1,
+      "video": "video.mp4",
+      "frame_index": 90,
+      "timestamp": 2.999122699386503,
+      "source_sha256": "71907489164047eab3c507c2bb319d1de47f7ee8e6a0ef01bf625ea59018bd0d",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        1341.7,
+        277.0,
+        1475.8,
+        651.4
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 2,
+      "video": "video.mp4",
+      "frame_index": 165,
+      "timestamp": 5.498391615541922,
+      "source_sha256": "71907489164047eab3c507c2bb319d1de47f7ee8e6a0ef01bf625ea59018bd0d",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        1159.3,
+        110.2,
+        1388.4,
+        758.3
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 3,
+      "video": "video.mp4",
+      "frame_index": 285,
+      "timestamp": 9.497221881390592,
+      "source_sha256": "71907489164047eab3c507c2bb319d1de47f7ee8e6a0ef01bf625ea59018bd0d",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 0,
+      "xyxy": [
+        480.0,
+        685.0,
+        1435.0,
+        1045.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 4,
+      "video": "video.mp4",
+      "frame_index": 330,
+      "timestamp": 10.996783231083844,
+      "source_sha256": "71907489164047eab3c507c2bb319d1de47f7ee8e6a0ef01bf625ea59018bd0d",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 0,
+      "xyxy": [
+        480.0,
+        620.0,
+        1435.0,
+        1000.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 5,
+      "video": "video.mp4",
+      "frame_index": 375,
+      "timestamp": 12.496344580777096,
+      "source_sha256": "71907489164047eab3c507c2bb319d1de47f7ee8e6a0ef01bf625ea59018bd0d",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 0,
+      "xyxy": [
+        410.0,
+        675.0,
+        1405.0,
+        1040.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 6,
+      "video": "video.mp4",
+      "frame_index": 420,
+      "timestamp": 13.995905930470347,
+      "source_sha256": "71907489164047eab3c507c2bb319d1de47f7ee8e6a0ef01bf625ea59018bd0d",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 0,
+      "xyxy": [
+        460.0,
+        685.0,
+        1385.0,
+        1020.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 8,
+      "video": "video2.mp4",
+      "frame_index": 90,
+      "timestamp": 2.999122270742358,
+      "source_sha256": "d151121901a229871a066c5a5306563de3eacae8b28e4031f8ff9fae0af06698",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        1267.8,
+        246.3,
+        1429.8,
+        682.1
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 9,
+      "video": "video2.mp4",
+      "frame_index": 165,
+      "timestamp": 5.498390829694323,
+      "source_sha256": "d151121901a229871a066c5a5306563de3eacae8b28e4031f8ff9fae0af06698",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        1010.5,
+        28.1,
+        1267.5,
+        810.4
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 10,
+      "video": "video2.mp4",
+      "frame_index": 285,
+      "timestamp": 9.497220524017466,
+      "source_sha256": "d151121901a229871a066c5a5306563de3eacae8b28e4031f8ff9fae0af06698",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 0,
+      "xyxy": [
+        784.9,
+        586.9,
+        1433.1,
+        911.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 11,
+      "video": "video2.mp4",
+      "frame_index": 330,
+      "timestamp": 10.996781659388645,
+      "source_sha256": "d151121901a229871a066c5a5306563de3eacae8b28e4031f8ff9fae0af06698",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 0,
+      "xyxy": [
+        640.0,
+        525.0,
+        1400.0,
+        955.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 12,
+      "video": "video2.mp4",
+      "frame_index": 375,
+      "timestamp": 12.496342794759824,
+      "source_sha256": "d151121901a229871a066c5a5306563de3eacae8b28e4031f8ff9fae0af06698",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 0,
+      "xyxy": [
+        631.5,
+        586.9,
+        1346.7,
+        911.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 13,
+      "video": "video2.mp4",
+      "frame_index": 420,
+      "timestamp": 13.995903930131004,
+      "source_sha256": "d151121901a229871a066c5a5306563de3eacae8b28e4031f8ff9fae0af06698",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 0,
+      "xyxy": [
+        631.5,
+        586.9,
+        1346.7,
+        911.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 14,
+      "video": "video3.mp4",
+      "frame_index": 30,
+      "timestamp": 0.9997076023391813,
+      "source_sha256": "15498acc8530aee8cc78111c513770d0f87e7e3b520aaa508eba0a5a87d0dd4b",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        724.0,
+        366.2,
+        1014.5,
+        802.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 15,
+      "video": "video3.mp4",
+      "frame_index": 90,
+      "timestamp": 2.9991228070175437,
+      "source_sha256": "15498acc8530aee8cc78111c513770d0f87e7e3b520aaa508eba0a5a87d0dd4b",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        724.0,
+        366.2,
+        1014.5,
+        802.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 16,
+      "video": "video3.mp4",
+      "frame_index": 165,
+      "timestamp": 5.498391812865497,
+      "source_sha256": "15498acc8530aee8cc78111c513770d0f87e7e3b520aaa508eba0a5a87d0dd4b",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        753.9,
+        256.0,
+        1044.5,
+        792.4
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 17,
+      "video": "video3.mp4",
+      "frame_index": 285,
+      "timestamp": 9.497222222222222,
+      "source_sha256": "15498acc8530aee8cc78111c513770d0f87e7e3b520aaa508eba0a5a87d0dd4b",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 0,
+      "xyxy": [
+        582.2,
+        720.0,
+        1096.3,
+        1077.6
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 18,
+      "video": "video3.mp4",
+      "frame_index": 330,
+      "timestamp": 10.996783625730995,
+      "source_sha256": "15498acc8530aee8cc78111c513770d0f87e7e3b520aaa508eba0a5a87d0dd4b",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 0,
+      "xyxy": [
+        75.0,
+        695.0,
+        1200.0,
+        1075.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 19,
+      "video": "video3.mp4",
+      "frame_index": 375,
+      "timestamp": 12.496345029239766,
+      "source_sha256": "15498acc8530aee8cc78111c513770d0f87e7e3b520aaa508eba0a5a87d0dd4b",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 0,
+      "xyxy": [
+        175.0,
+        710.0,
+        1370.0,
+        1070.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 20,
+      "video": "video3.mp4",
+      "frame_index": 420,
+      "timestamp": 13.995906432748537,
+      "source_sha256": "15498acc8530aee8cc78111c513770d0f87e7e3b520aaa508eba0a5a87d0dd4b",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 0,
+      "xyxy": [
+        150.0,
+        715.0,
+        1345.0,
+        1065.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 22,
+      "video": "video4.mp4",
+      "frame_index": 90,
+      "timestamp": 2.9991220043572984,
+      "source_sha256": "d0388144652c5604010d96f428f709888760bb65fd54cb9e690358245890b39e",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        1274.4,
+        236.9,
+        1453.2,
+        661.6
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 23,
+      "video": "video4.mp4",
+      "frame_index": 165,
+      "timestamp": 5.498390341321714,
+      "source_sha256": "d0388144652c5604010d96f428f709888760bb65fd54cb9e690358245890b39e",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        933.8,
+        28.1,
+        1224.3,
+        810.4
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 24,
+      "video": "video4.mp4",
+      "frame_index": 285,
+      "timestamp": 9.497219680464779,
+      "source_sha256": "d0388144652c5604010d96f428f709888760bb65fd54cb9e690358245890b39e",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 0,
+      "xyxy": [
+        780.0,
+        600.0,
+        1485.0,
+        975.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 25,
+      "video": "video4.mp4",
+      "frame_index": 330,
+      "timestamp": 10.996780682643427,
+      "source_sha256": "d0388144652c5604010d96f428f709888760bb65fd54cb9e690358245890b39e",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 0,
+      "xyxy": [
+        770.0,
+        595.0,
+        1440.0,
+        970.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 26,
+      "video": "video4.mp4",
+      "frame_index": 375,
+      "timestamp": 12.496341684822077,
+      "source_sha256": "d0388144652c5604010d96f428f709888760bb65fd54cb9e690358245890b39e",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 0,
+      "xyxy": [
+        780.0,
+        540.0,
+        1425.0,
+        925.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 27,
+      "video": "video4.mp4",
+      "frame_index": 420,
+      "timestamp": 13.995902687000727,
+      "source_sha256": "d0388144652c5604010d96f428f709888760bb65fd54cb9e690358245890b39e",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 0,
+      "xyxy": [
+        738.2,
+        540.2,
+        1419.9,
+        897.8
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 29,
+      "video": "video5.mp4",
+      "frame_index": 90,
+      "timestamp": 2.999122105263158,
+      "source_sha256": "2249fcb96f436b11b88e3f061314431f212fcd649681f30e6c680001b3d4d03a",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        1282.8,
+        246.3,
+        1444.8,
+        682.1
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 30,
+      "video": "video5.mp4",
+      "frame_index": 165,
+      "timestamp": 5.49839052631579,
+      "source_sha256": "2249fcb96f436b11b88e3f061314431f212fcd649681f30e6c680001b3d4d03a",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        985.3,
+        311.1,
+        1292.6,
+        797.2
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 31,
+      "video": "video5.mp4",
+      "frame_index": 210,
+      "timestamp": 6.997951578947369,
+      "source_sha256": "2249fcb96f436b11b88e3f061314431f212fcd649681f30e6c680001b3d4d03a",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        643.7,
+        121.6,
+        1034.8,
+        836.8
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 32,
+      "video": "video5.mp4",
+      "frame_index": 270,
+      "timestamp": 8.997366315789474,
+      "source_sha256": "2249fcb96f436b11b88e3f061314431f212fcd649681f30e6c680001b3d4d03a",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        787.4,
+        74.9,
+        1011.0,
+        823.6
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 33,
+      "video": "video5.mp4",
+      "frame_index": 330,
+      "timestamp": 10.99678105263158,
+      "source_sha256": "2249fcb96f436b11b88e3f061314431f212fcd649681f30e6c680001b3d4d03a",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        724.0,
+        334.4,
+        1014.5,
+        803.8
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 34,
+      "video": "video5.mp4",
+      "frame_index": 390,
+      "timestamp": 12.996195789473685,
+      "source_sha256": "2249fcb96f436b11b88e3f061314431f212fcd649681f30e6c680001b3d4d03a",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        730.6,
+        366.2,
+        1037.9,
+        802.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 36,
+      "video": "video6.mp4",
+      "frame_index": 90,
+      "timestamp": 2.999123110151188,
+      "source_sha256": "5e11033abc26004fce5f821087b749dff0236aee5b7bfe430673c8619c30c96d",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        1259.4,
+        229.5,
+        1438.2,
+        698.9
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 37,
+      "video": "video6.mp4",
+      "frame_index": 165,
+      "timestamp": 5.498392368610511,
+      "source_sha256": "5e11033abc26004fce5f821087b749dff0236aee5b7bfe430673c8619c30c96d",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        763.6,
+        155.1,
+        1154.7,
+        803.3
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 38,
+      "video": "video6.mp4",
+      "frame_index": 210,
+      "timestamp": 6.997953923686105,
+      "source_sha256": "5e11033abc26004fce5f821087b749dff0236aee5b7bfe430673c8619c30c96d",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        967.3,
+        61.7,
+        1190.8,
+        776.9
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 39,
+      "video": "video6.mp4",
+      "frame_index": 270,
+      "timestamp": 8.997369330453564,
+      "source_sha256": "5e11033abc26004fce5f821087b749dff0236aee5b7bfe430673c8619c30c96d",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        783.9,
+        28.1,
+        1074.4,
+        810.4
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 40,
+      "video": "video6.mp4",
+      "frame_index": 330,
+      "timestamp": 10.996784737221022,
+      "source_sha256": "5e11033abc26004fce5f821087b749dff0236aee5b7bfe430673c8619c30c96d",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        740.7,
+        0.2,
+        997.7,
+        838.3
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 41,
+      "video": "video6.mp4",
+      "frame_index": 390,
+      "timestamp": 12.996200143988482,
+      "source_sha256": "5e11033abc26004fce5f821087b749dff0236aee5b7bfe430673c8619c30c96d",
+      "width": 1920,
+      "height": 1080,
+      "split": "train",
+      "scene": "living_room",
+      "class_id": 1,
+      "xyxy": [
+        684.3,
+        0.0,
+        874.3,
+        901.8
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 42,
+      "video": "video10.mp4",
+      "frame_index": 360,
+      "timestamp": 12.004594942528735,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": null,
+      "xyxy": null,
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 43,
+      "video": "video10.mp4",
+      "frame_index": 1200,
+      "timestamp": 40.01531647509579,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": null,
+      "xyxy": null,
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 44,
+      "video": "video10.mp4",
+      "frame_index": 2399,
+      "timestamp": 79.99728685312898,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 1,
+      "xyxy": [
+        624.5,
+        202.1,
+        874.1,
+        656.6
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 45,
+      "video": "video10.mp4",
+      "frame_index": 3299,
+      "timestamp": 110.00877420945082,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 1,
+      "xyxy": [
+        584.9,
+        240.9,
+        733.9,
+        717.7
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 46,
+      "video": "video10.mp4",
+      "frame_index": 4198,
+      "timestamp": 139.9869154687101,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 1,
+      "xyxy": [
+        725.5,
+        117.7,
+        1112.9,
+        720
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 47,
+      "video": "video10.mp4",
+      "frame_index": 4798,
+      "timestamp": 159.99457370625797,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 1,
+      "xyxy": [
+        762.4,
+        40.1,
+        956.1,
+        598.8
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 48,
+      "video": "video10.mp4",
+      "frame_index": 5638,
+      "timestamp": 188.00529523882503,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 1,
+      "xyxy": [
+        854.2,
+        1.8,
+        1263.9,
+        717.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 49,
+      "video": "video10.mp4",
+      "frame_index": 6298,
+      "timestamp": 210.01371930012772,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": null,
+      "xyxy": null,
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 50,
+      "video": "video10.mp4",
+      "frame_index": 6747,
+      "timestamp": 224.98611688122605,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": null,
+      "xyxy": null,
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 51,
+      "video": "video10.mp4",
+      "frame_index": 7347,
+      "timestamp": 244.99377511877393,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": null,
+      "xyxy": null,
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 52,
+      "video": "video10.mp4",
+      "frame_index": 8457,
+      "timestamp": 282.0079428582375,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": null,
+      "xyxy": null,
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 53,
+      "video": "video10.mp4",
+      "frame_index": 8697,
+      "timestamp": 290.0110061532567,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 1,
+      "xyxy": [
+        751.2,
+        215.4,
+        967.3,
+        703.3
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 54,
+      "video": "video10.mp4",
+      "frame_index": 9057,
+      "timestamp": 302.0156010957854,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 1,
+      "xyxy": [
+        749.7,
+        260.0,
+        930.1,
+        686.7
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 55,
+      "video": "video10.mp4",
+      "frame_index": 9296,
+      "timestamp": 309.985318293742,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 1,
+      "xyxy": [
+        764.1,
+        117.7,
+        1114.2,
+        720
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 56,
+      "video": "video10.mp4",
+      "frame_index": 9716,
+      "timestamp": 323.9906790600255,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 1,
+      "xyxy": [
+        780.0,
+        275.5,
+        1018.4,
+        603.3
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 57,
+      "video": "video10.mp4",
+      "frame_index": 10496,
+      "timestamp": 350.0006347688378,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 1,
+      "xyxy": [
+        751.2,
+        46.5,
+        967.3,
+        672.3
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 58,
+      "video": "video10.mp4",
+      "frame_index": 11036,
+      "timestamp": 368.0075271826309,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 1,
+      "xyxy": [
+        824.5,
+        300.0,
+        1071.0,
+        680.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 59,
+      "video": "video10.mp4",
+      "frame_index": 11516,
+      "timestamp": 384.0136537726692,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 1,
+      "xyxy": [
+        844.7,
+        68.9,
+        993.7,
+        650.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 60,
+      "video": "video10.mp4",
+      "frame_index": 11935,
+      "timestamp": 397.98566844189014,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 1,
+      "xyxy": [
+        833.5,
+        98.7,
+        1004.9,
+        620.2
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 61,
+      "video": "video10.mp4",
+      "frame_index": 12475,
+      "timestamp": 415.9925608556833,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 1,
+      "xyxy": [
+        769.5,
+        1.8,
+        1268.7,
+        717.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 66,
+      "video": "video10.mp4",
+      "frame_index": 9566,
+      "timestamp": 318.9887645006386,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        817.9,
+        370.0,
+        1130.4,
+        673.3
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 67,
+      "video": "video10.mp4",
+      "frame_index": 9596,
+      "timestamp": 319.98914741251593,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        817.9,
+        370.0,
+        1130.4,
+        673.3
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 68,
+      "video": "video10.mp4",
+      "frame_index": 10136,
+      "timestamp": 337.9960398263091,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        817.9,
+        373.3,
+        1174.4,
+        600.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 69,
+      "video": "video10.mp4",
+      "frame_index": 10166,
+      "timestamp": 338.9964227381864,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        817.9,
+        373.3,
+        1174.4,
+        600.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 70,
+      "video": "video10.mp4",
+      "frame_index": 10196,
+      "timestamp": 339.99680565006383,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        817.9,
+        373.3,
+        1174.4,
+        600.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 71,
+      "video": "video10.mp4",
+      "frame_index": 10766,
+      "timestamp": 359.0040809757343,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        835.5,
+        370.0,
+        1128.2,
+        550.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 72,
+      "video": "video10.mp4",
+      "frame_index": 10796,
+      "timestamp": 360.00446388761173,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        835.5,
+        370.0,
+        1128.2,
+        550.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 73,
+      "video": "video10.mp4",
+      "frame_index": 10826,
+      "timestamp": 361.00484679948914,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        835.5,
+        370.0,
+        1128.2,
+        550.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 74,
+      "video": "video10.mp4",
+      "frame_index": 11366,
+      "timestamp": 379.0117392132822,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        883.9,
+        376.7,
+        1148.0,
+        570.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 75,
+      "video": "video10.mp4",
+      "frame_index": 11396,
+      "timestamp": 380.01212212515964,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        883.9,
+        376.7,
+        1148.0,
+        570.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 76,
+      "video": "video10.mp4",
+      "frame_index": 11426,
+      "timestamp": 381.01250503703704,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        883.9,
+        376.7,
+        1148.0,
+        570.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 77,
+      "video": "video10.mp4",
+      "frame_index": 11815,
+      "timestamp": 393.98413679438056,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        798.1,
+        346.7,
+        1170.0,
+        680.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 78,
+      "video": "video10.mp4",
+      "frame_index": 11845,
+      "timestamp": 394.98451970625797,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        798.1,
+        346.7,
+        1170.0,
+        680.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 79,
+      "video": "video10.mp4",
+      "frame_index": 12235,
+      "timestamp": 407.9894975606641,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        800.3,
+        356.7,
+        1172.2,
+        676.7
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 80,
+      "video": "video10.mp4",
+      "frame_index": 12265,
+      "timestamp": 408.9898804725415,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        800.3,
+        356.7,
+        1172.2,
+        676.7
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 81,
+      "video": "video10.mp4",
+      "frame_index": 12295,
+      "timestamp": 409.9902633844189,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        800.3,
+        356.7,
+        1172.2,
+        676.7
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 82,
+      "video": "video10.mp4",
+      "frame_index": 12745,
+      "timestamp": 424.9960070625798,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        787.1,
+        293.3,
+        1148.0,
+        673.3
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 83,
+      "video": "video10.mp4",
+      "frame_index": 12775,
+      "timestamp": 425.9963899744572,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        787.1,
+        293.3,
+        1148.0,
+        673.3
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 84,
+      "video": "video10.mp4",
+      "frame_index": 12805,
+      "timestamp": 426.9967728863346,
+      "source_sha256": "a374daa344f56379ac7f23fb7d88de7fdcbd1b9c4c6a2f02b9630dd44f32cc39",
+      "width": 1280,
+      "height": 720,
+      "split": "train",
+      "scene": "sofa_room",
+      "class_id": 0,
+      "xyxy": [
+        787.1,
+        293.3,
+        1148.0,
+        673.3
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 85,
+      "video": "video7.mp4",
+      "frame_index": 300,
+      "timestamp": 9.998711743772242,
+      "source_sha256": "b276e7bc5f286ec033494b892e7a66ffefdcebcec62c647639d8d02443cc9224",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 1,
+      "xyxy": [
+        664.7,
+        342.2,
+        754.1,
+        636.5
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 86,
+      "video": "video7.mp4",
+      "frame_index": 750,
+      "timestamp": 24.996779359430604,
+      "source_sha256": "b276e7bc5f286ec033494b892e7a66ffefdcebcec62c647639d8d02443cc9224",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 1,
+      "xyxy": [
+        620.3,
+        381.3,
+        698.5,
+        597.3
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 87,
+      "video": "video7.mp4",
+      "frame_index": 1350,
+      "timestamp": 44.99420284697509,
+      "source_sha256": "b276e7bc5f286ec033494b892e7a66ffefdcebcec62c647639d8d02443cc9224",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 1,
+      "xyxy": [
+        408.8,
+        426.2,
+        550.3,
+        612.4
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 88,
+      "video": "video7.mp4",
+      "frame_index": 1650,
+      "timestamp": 54.99291459074733,
+      "source_sha256": "b276e7bc5f286ec033494b892e7a66ffefdcebcec62c647639d8d02443cc9224",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 1,
+      "xyxy": [
+        554.3,
+        416.9,
+        684.6,
+        621.7
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 89,
+      "video": "video7.mp4",
+      "frame_index": 2100,
+      "timestamp": 69.99098220640569,
+      "source_sha256": "b276e7bc5f286ec033494b892e7a66ffefdcebcec62c647639d8d02443cc9224",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 1,
+      "xyxy": [
+        785.2,
+        422.4,
+        893.3,
+        616.1
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 90,
+      "video": "video7.mp4",
+      "frame_index": 3600,
+      "timestamp": 119.9845409252669,
+      "source_sha256": "b276e7bc5f286ec033494b892e7a66ffefdcebcec62c647639d8d02443cc9224",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 1,
+      "xyxy": [
+        680.9,
+        363.3,
+        777.8,
+        635.3
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 91,
+      "video": "video7.mp4",
+      "frame_index": 4651,
+      "timestamp": 155.01336106761565,
+      "source_sha256": "b276e7bc5f286ec033494b892e7a66ffefdcebcec62c647639d8d02443cc9224",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 1,
+      "xyxy": [
+        482.7,
+        396.7,
+        569.1,
+        601.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 92,
+      "video": "video7.mp4",
+      "frame_index": 5401,
+      "timestamp": 180.01014042704625,
+      "source_sha256": "b276e7bc5f286ec033494b892e7a66ffefdcebcec62c647639d8d02443cc9224",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 1,
+      "xyxy": [
+        453.3,
+        442.3,
+        555.8,
+        606.2
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 93,
+      "video": "video7.mp4",
+      "frame_index": 2340,
+      "timestamp": 77.98995160142348,
+      "source_sha256": "b276e7bc5f286ec033494b892e7a66ffefdcebcec62c647639d8d02443cc9224",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 0,
+      "xyxy": [
+        585.1,
+        475.4,
+        775.0,
+        610.7
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 94,
+      "video": "video7.mp4",
+      "frame_index": 3180,
+      "timestamp": 105.98634448398576,
+      "source_sha256": "b276e7bc5f286ec033494b892e7a66ffefdcebcec62c647639d8d02443cc9224",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 0,
+      "xyxy": [
+        676.7,
+        491.0,
+        989.5,
+        621.1
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 96,
+      "video": "video7.mp4",
+      "frame_index": 5041,
+      "timestamp": 168.01168633451957,
+      "source_sha256": "b276e7bc5f286ec033494b892e7a66ffefdcebcec62c647639d8d02443cc9224",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 0,
+      "xyxy": [
+        439.9,
+        454.6,
+        645.4,
+        584.7
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 97,
+      "video": "video7.mp4",
+      "frame_index": 6481,
+      "timestamp": 216.00550270462634,
+      "source_sha256": "b276e7bc5f286ec033494b892e7a66ffefdcebcec62c647639d8d02443cc9224",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 0,
+      "xyxy": [
+        511.4,
+        483.2,
+        703.5,
+        592.5
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 98,
+      "video": "video7.mp4",
+      "frame_index": 6541,
+      "timestamp": 218.00524505338078,
+      "source_sha256": "b276e7bc5f286ec033494b892e7a66ffefdcebcec62c647639d8d02443cc9224",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 0,
+      "xyxy": [
+        511.4,
+        483.2,
+        703.5,
+        592.5
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 99,
+      "video": "video8.mp4",
+      "frame_index": 150,
+      "timestamp": 5.0,
+      "source_sha256": "d1ad5b82a6f72843e6c0baa24d9bbcc36baf9bd9eddedc04ca110ef5449d4f33",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 1,
+      "xyxy": [
+        764.8,
+        189.8,
+        913.8,
+        688.9
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 100,
+      "video": "video8.mp4",
+      "frame_index": 450,
+      "timestamp": 15.0,
+      "source_sha256": "d1ad5b82a6f72843e6c0baa24d9bbcc36baf9bd9eddedc04ca110ef5449d4f33",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 1,
+      "xyxy": [
+        528.7,
+        344.5,
+        670.2,
+        594.1
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 101,
+      "video": "video8.mp4",
+      "frame_index": 750,
+      "timestamp": 25.0,
+      "source_sha256": "d1ad5b82a6f72843e6c0baa24d9bbcc36baf9bd9eddedc04ca110ef5449d4f33",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 1,
+      "xyxy": [
+        583.1,
+        426.2,
+        735.8,
+        612.4
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 102,
+      "video": "video8.mp4",
+      "frame_index": 1200,
+      "timestamp": 40.0,
+      "source_sha256": "d1ad5b82a6f72843e6c0baa24d9bbcc36baf9bd9eddedc04ca110ef5449d4f33",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 1,
+      "xyxy": [
+        504.3,
+        253.8,
+        634.7,
+        644.9
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 103,
+      "video": "video8.mp4",
+      "frame_index": 1650,
+      "timestamp": 55.0,
+      "source_sha256": "d1ad5b82a6f72843e6c0baa24d9bbcc36baf9bd9eddedc04ca110ef5449d4f33",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 1,
+      "xyxy": [
+        78.6,
+        420.1,
+        261.1,
+        658.5
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 104,
+      "video": "video8.mp4",
+      "frame_index": 2460,
+      "timestamp": 82.0,
+      "source_sha256": "d1ad5b82a6f72843e6c0baa24d9bbcc36baf9bd9eddedc04ca110ef5449d4f33",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 1,
+      "xyxy": [
+        464.3,
+        266.1,
+        594.7,
+        612.6
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 105,
+      "video": "video8.mp4",
+      "frame_index": 3000,
+      "timestamp": 100.0,
+      "source_sha256": "d1ad5b82a6f72843e6c0baa24d9bbcc36baf9bd9eddedc04ca110ef5449d4f33",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 1,
+      "xyxy": [
+        543.1,
+        250.1,
+        695.8,
+        648.6
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 106,
+      "video": "video8.mp4",
+      "frame_index": 3450,
+      "timestamp": 115.0,
+      "source_sha256": "d1ad5b82a6f72843e6c0baa24d9bbcc36baf9bd9eddedc04ca110ef5449d4f33",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 1,
+      "xyxy": [
+        231.7,
+        192.2,
+        447.7,
+        646.6
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 107,
+      "video": "video8.mp4",
+      "frame_index": 1830,
+      "timestamp": 61.0,
+      "source_sha256": "d1ad5b82a6f72843e6c0baa24d9bbcc36baf9bd9eddedc04ca110ef5449d4f33",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 0,
+      "xyxy": [
+        548.0,
+        472.0,
+        872.0,
+        672.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 108,
+      "video": "video8.mp4",
+      "frame_index": 1860,
+      "timestamp": 62.0,
+      "source_sha256": "d1ad5b82a6f72843e6c0baa24d9bbcc36baf9bd9eddedc04ca110ef5449d4f33",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 0,
+      "xyxy": [
+        527.0,
+        485.3,
+        866.0,
+        682.7
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 109,
+      "video": "video8.mp4",
+      "frame_index": 1890,
+      "timestamp": 63.0,
+      "source_sha256": "d1ad5b82a6f72843e6c0baa24d9bbcc36baf9bd9eddedc04ca110ef5449d4f33",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 0,
+      "xyxy": [
+        524.0,
+        466.7,
+        863.0,
+        672.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 110,
+      "video": "video8.mp4",
+      "frame_index": 2670,
+      "timestamp": 89.0,
+      "source_sha256": "d1ad5b82a6f72843e6c0baa24d9bbcc36baf9bd9eddedc04ca110ef5449d4f33",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 0,
+      "xyxy": [
+        152.0,
+        442.7,
+        515.0,
+        624.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 111,
+      "video": "video8.mp4",
+      "frame_index": 2700,
+      "timestamp": 90.0,
+      "source_sha256": "d1ad5b82a6f72843e6c0baa24d9bbcc36baf9bd9eddedc04ca110ef5449d4f33",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 0,
+      "xyxy": [
+        152.0,
+        442.7,
+        515.0,
+        624.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 112,
+      "video": "video8.mp4",
+      "frame_index": 2730,
+      "timestamp": 91.0,
+      "source_sha256": "d1ad5b82a6f72843e6c0baa24d9bbcc36baf9bd9eddedc04ca110ef5449d4f33",
+      "width": 1280,
+      "height": 720,
+      "split": "val",
+      "scene": "office",
+      "class_id": 0,
+      "xyxy": [
+        152.0,
+        442.7,
+        515.0,
+        624.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 113,
+      "video": "video9.mp4",
+      "frame_index": 600,
+      "timestamp": 19.997966549043234,
+      "source_sha256": "5f65183c5b7f0d4920bd43734a9cb7749328247145630a7476726e55a9e27d85",
+      "width": 1280,
+      "height": 720,
+      "split": "test",
+      "scene": "bedroom",
+      "class_id": 1,
+      "xyxy": [
+        565.6,
+        0.0,
+        953.0,
+        643.5
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 114,
+      "video": "video9.mp4",
+      "frame_index": 1500,
+      "timestamp": 49.99491637260809,
+      "source_sha256": "5f65183c5b7f0d4920bd43734a9cb7749328247145630a7476726e55a9e27d85",
+      "width": 1280,
+      "height": 720,
+      "split": "test",
+      "scene": "bedroom",
+      "class_id": 1,
+      "xyxy": [
+        757.6,
+        101.0,
+        1040.8,
+        577.9
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 115,
+      "video": "video9.mp4",
+      "frame_index": 2400,
+      "timestamp": 79.99186619617294,
+      "source_sha256": "5f65183c5b7f0d4920bd43734a9cb7749328247145630a7476726e55a9e27d85",
+      "width": 1280,
+      "height": 720,
+      "split": "test",
+      "scene": "bedroom",
+      "class_id": 1,
+      "xyxy": [
+        601.0,
+        188.1,
+        877.6,
+        372.7
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 116,
+      "video": "video9.mp4",
+      "frame_index": 3300,
+      "timestamp": 109.98881601973778,
+      "source_sha256": "5f65183c5b7f0d4920bd43734a9cb7749328247145630a7476726e55a9e27d85",
+      "width": 1280,
+      "height": 720,
+      "split": "test",
+      "scene": "bedroom",
+      "class_id": 1,
+      "xyxy": [
+        862.3,
+        0.1,
+        1056.0,
+        558.9
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 117,
+      "video": "video9.mp4",
+      "frame_index": 4200,
+      "timestamp": 139.98576584330263,
+      "source_sha256": "5f65183c5b7f0d4920bd43734a9cb7749328247145630a7476726e55a9e27d85",
+      "width": 1280,
+      "height": 720,
+      "split": "test",
+      "scene": "bedroom",
+      "class_id": 0,
+      "xyxy": [
+        550,
+        305,
+        790,
+        505
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 118,
+      "video": "video9.mp4",
+      "frame_index": 5401,
+      "timestamp": 180.01502888563752,
+      "source_sha256": "5f65183c5b7f0d4920bd43734a9cb7749328247145630a7476726e55a9e27d85",
+      "width": 1280,
+      "height": 720,
+      "split": "test",
+      "scene": "bedroom",
+      "class_id": 1,
+      "xyxy": [
+        686.5,
+        1.8,
+        992.0,
+        717.0
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 119,
+      "video": "video9.mp4",
+      "frame_index": 6301,
+      "timestamp": 210.01197870920237,
+      "source_sha256": "5f65183c5b7f0d4920bd43734a9cb7749328247145630a7476726e55a9e27d85",
+      "width": 1280,
+      "height": 720,
+      "split": "test",
+      "scene": "bedroom",
+      "class_id": 1,
+      "xyxy": [
+        715.3,
+        140.0,
+        1043.1,
+        698.8
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 120,
+      "video": "video9.mp4",
+      "frame_index": 7201,
+      "timestamp": 240.00892853276721,
+      "source_sha256": "5f65183c5b7f0d4920bd43734a9cb7749328247145630a7476726e55a9e27d85",
+      "width": 1280,
+      "height": 720,
+      "split": "test",
+      "scene": "bedroom",
+      "class_id": 1,
+      "xyxy": [
+        675.1,
+        2.7,
+        1040.0,
+        694.2
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 121,
+      "video": "video9.mp4",
+      "frame_index": 9001,
+      "timestamp": 300.00282817989694,
+      "source_sha256": "5f65183c5b7f0d4920bd43734a9cb7749328247145630a7476726e55a9e27d85",
+      "width": 1280,
+      "height": 720,
+      "split": "test",
+      "scene": "bedroom",
+      "class_id": 1,
+      "xyxy": [
+        565.6,
+        140.0,
+        953.0,
+        698.8
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 122,
+      "video": "video9.mp4",
+      "frame_index": 9901,
+      "timestamp": 329.99977800346176,
+      "source_sha256": "5f65183c5b7f0d4920bd43734a9cb7749328247145630a7476726e55a9e27d85",
+      "width": 1280,
+      "height": 720,
+      "split": "test",
+      "scene": "bedroom",
+      "class_id": 1,
+      "xyxy": [
+        584.2,
+        155.9,
+        714.6,
+        383.1
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 123,
+      "video": "video9.mp4",
+      "frame_index": 10501,
+      "timestamp": 349.997744552505,
+      "source_sha256": "5f65183c5b7f0d4920bd43734a9cb7749328247145630a7476726e55a9e27d85",
+      "width": 1280,
+      "height": 720,
+      "split": "test",
+      "scene": "bedroom",
+      "class_id": 1,
+      "xyxy": [
+        717.7,
+        174.5,
+        1000.8,
+        584.3
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 124,
+      "video": "video9.mp4",
+      "frame_index": 11251,
+      "timestamp": 374.99520273880904,
+      "source_sha256": "5f65183c5b7f0d4920bd43734a9cb7749328247145630a7476726e55a9e27d85",
+      "width": 1280,
+      "height": 720,
+      "split": "test",
+      "scene": "bedroom",
+      "class_id": 1,
+      "xyxy": [
+        624.2,
+        196.9,
+        974.4,
+        561.9
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 125,
+      "video": "video9.mp4",
+      "frame_index": 2880,
+      "timestamp": 95.99023943540753,
+      "source_sha256": "5f65183c5b7f0d4920bd43734a9cb7749328247145630a7476726e55a9e27d85",
+      "width": 1280,
+      "height": 720,
+      "split": "test",
+      "scene": "bedroom",
+      "class_id": 0,
+      "xyxy": [
+        515,
+        285,
+        850,
+        510
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 126,
+      "video": "video9.mp4",
+      "frame_index": 2910,
+      "timestamp": 96.99013776285969,
+      "source_sha256": "5f65183c5b7f0d4920bd43734a9cb7749328247145630a7476726e55a9e27d85",
+      "width": 1280,
+      "height": 720,
+      "split": "test",
+      "scene": "bedroom",
+      "class_id": 0,
+      "xyxy": [
+        515,
+        285,
+        850,
+        510
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 127,
+      "video": "video9.mp4",
+      "frame_index": 4830,
+      "timestamp": 160.98363071979804,
+      "source_sha256": "5f65183c5b7f0d4920bd43734a9cb7749328247145630a7476726e55a9e27d85",
+      "width": 1280,
+      "height": 720,
+      "split": "test",
+      "scene": "bedroom",
+      "class_id": 0,
+      "xyxy": [
+        472.2,
+        336.8,
+        926.6,
+        701.8
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 128,
+      "video": "video9.mp4",
+      "frame_index": 4860,
+      "timestamp": 161.9835290472502,
+      "source_sha256": "5f65183c5b7f0d4920bd43734a9cb7749328247145630a7476726e55a9e27d85",
+      "width": 1280,
+      "height": 720,
+      "split": "test",
+      "scene": "bedroom",
+      "class_id": 0,
+      "xyxy": [
+        472.2,
+        364.2,
+        926.6,
+        714.3
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 129,
+      "video": "video9.mp4",
+      "frame_index": 10891,
+      "timestamp": 362.9964228093831,
+      "source_sha256": "5f65183c5b7f0d4920bd43734a9cb7749328247145630a7476726e55a9e27d85",
+      "width": 1280,
+      "height": 720,
+      "split": "test",
+      "scene": "bedroom",
+      "class_id": 0,
+      "xyxy": [
+        445,
+        285,
+        850,
+        490
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    },
+    {
+      "id": 130,
+      "video": "video9.mp4",
+      "frame_index": 10921,
+      "timestamp": 363.99632113683526,
+      "source_sha256": "5f65183c5b7f0d4920bd43734a9cb7749328247145630a7476726e55a9e27d85",
+      "width": 1280,
+      "height": 720,
+      "split": "test",
+      "scene": "bedroom",
+      "class_id": 0,
+      "xyxy": [
+        445,
+        285,
+        850,
+        490
+      ],
+      "reviewed": true,
+      "review_method": "visual_posture_and_box_review_v1"
+    }
+  ]
+}
